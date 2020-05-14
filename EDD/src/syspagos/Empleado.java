@@ -10,7 +10,11 @@ import java.util.regex.Pattern;
 
 public class Empleado {
 
-    private int numeroEmpleado;
+    public void setMesesTrabajo(int mesesTrabajo) {
+		this.mesesTrabajo = mesesTrabajo;
+	}
+
+	private int numeroEmpleado;
     String nombreEmpleado;
     private int mesesTrabajo;
     boolean Directivo;
@@ -111,10 +115,6 @@ public class Empleado {
 
     public int getMesesTrabajo() {
         return mesesTrabajo;
-    }
-
-    private void setMesesTrabajo(int mesesTrabajo) {
-        this.mesesTrabajo = mesesTrabajo;
     }
 
     public boolean getDirectivo() {
