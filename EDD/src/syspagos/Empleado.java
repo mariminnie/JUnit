@@ -90,8 +90,10 @@ public class Empleado {
         if (directivo.length()==1){
             if (caracter[0] == '+' ){
                 setDirectivo(true);
+                return;
             }else if(caracter[0]=='-'){
                 setDirectivo(false);
+                return;
             }
         }
         throw new CargoException();
